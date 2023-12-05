@@ -25,6 +25,6 @@ public partial class View2 : UserControl
 
 	public void Button_Click (object sender, RoutedEventArgs args)
 	{
-		GuiToolkit.Current.MainWindow.SetPanel (new View1 ());
+		(Avalonia.Application.Current as App).MainWindow.SetPanel (new View1 ());
 	}
 }
